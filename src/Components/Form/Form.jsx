@@ -47,18 +47,18 @@ const Form = () => {
   };
 
   return (
-    <form className="Form" action="active">
-      <div className="input-container">
+    <form className="Form w-2/3" action="active">
+      <div className="input-container ">
         <input
           type="text"
-          className="inputTitle"
+          className="inputTitle bg-zinc-800 p-5 m-2 w-10/12"
           placeholder="Title"
           value={title}
           required
           onChange={titleChange}
         />
         <textarea
-          className="inputText"
+          className="inputText bg-zinc-800 p-5 m-2 w-10/12"
           placeholder="Write here"
           value={text}
           required

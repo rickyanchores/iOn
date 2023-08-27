@@ -2,10 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Jura&display=swap');
+
+
 .App {
   font-family: sans-serif;
   text-align: center;
-  font-family: 'Jura', sans-serif;;
+  font-family: 'Jura', sans-serif;
 }
 
 body {
@@ -13,6 +15,7 @@ body {
   color: whitesmoke;
 }
 
+/* INPUT FORM*/
 .input-container {
   width: 400px;
   margin: auto;
@@ -20,6 +23,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
 }
+/* FORM */
 .Form {
   width: 80vh;
   margin: auto;
@@ -29,7 +33,7 @@ img {
   width: 200px;
   height: 200px;
 }
-
+/* INPUT and TEXTAREA 
 input,
 textarea {
   background: rgb(32, 32, 32);
@@ -40,11 +44,14 @@ textarea {
   padding: 0.5em;
 }
 
+*/
+
+/* TEXTAREA */
 textarea {
   font-size: 20px;
   color: rgba(216, 216, 216, 0.726);
 }
-
+/* SUBMIT BUTTON  */
 .submit {
   width: 100px;
   height: 100px;
@@ -61,13 +68,16 @@ textarea {
   background: teal;
   cursor: pointer;
 }
-
+/* BLOG */
 .Blog {
   border: 2px solid rgb(14, 12, 12);
   margin-top: 1em;
   padding: 1em;
   text-align: start;
 }
+
+
+/* */
 .actions-container {
   display: flex;
   flex-wrap: wrap;
