@@ -48,17 +48,17 @@ const Form = () => {
 
   return (
     <form className="Form w-2/3" action="active">
-      <div className="input-container ">
+      <div className="input-container m-auto border-red-700 border-2">
         <input
           type="text"
-          className="inputTitle bg-zinc-800 p-5 m-2 w-10/12"
+          className="inputTitle bg-zinc-800 border-red-700 border-2 w-3/4 p-5 m-2"
           placeholder="Title"
           value={title}
           required
           onChange={titleChange}
         />
         <textarea
-          className="inputText bg-zinc-800 p-5 m-2 w-10/12"
+          className="inputText bg-zinc-800 p-5 m-2"
           placeholder="Write here"
           value={text}
           required
