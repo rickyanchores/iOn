@@ -15,15 +15,17 @@ const Blog = ({ image, title, text, onRemove, onEdit }) => {
   };
 
   return (
-    <div className="Blog">
+    <div className="Blog p-5 m-5 rounded-md">
       {isEditing ? (
         <>
           <input
+            className=" bg-zinc-800 text-white p-5"
             type="text"
             value={editedTitle}
             onChange={(e) => setEditedTitle(e.target.value)}
           />
           <textarea
+            className="bg-zinc-800 text-white p-5"
             value={editedText}
             onChange={(e) => setEditedText(e.target.value)}
           />
@@ -40,11 +42,11 @@ const Blog = ({ image, title, text, onRemove, onEdit }) => {
             Save
           </button>
         ) : (
-          <button className="edit" onClick={handleEditClick}>
+          <button className="edit hover:bg-orange-700 p-2 m-2" onClick={handleEditClick}>
             Edit
           </button>
         )}
-        <div className="remove" onClick={onRemove}>
+        <div className="remove bg-red-700 rounded-sm" onClick={onRemove}>
           X
         </div>
       </div>

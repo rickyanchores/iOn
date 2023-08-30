@@ -17,3 +17,9 @@ body {
   color: whitesmoke;
 }
 
+.Blog{
+  background: #333;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

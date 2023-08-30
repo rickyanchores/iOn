@@ -47,24 +47,24 @@ const Form = () => {
   };
 
   return (
-    <form className="Form w-2/3" action="active">
-      <div className="input-container m-auto border-red-700 border-2">
+    <form className="Form flex flex-col justify-center" action="active">
+      <div className="input-container m-auto rounded-md ">
         <input
           type="text"
-          className="inputTitle bg-zinc-800 border-red-700 border-2 w-3/4 p-5 m-2"
+          className="inputTitle bg-zinc-800 w-3/4 p-5 m-5"
           placeholder="Title"
           value={title}
           required
           onChange={titleChange}
         />
         <textarea
-          className="inputText bg-zinc-800 p-5 m-2"
+          className="inputText bg-zinc-800 w-3/4 p-5 m-5"
           placeholder="Write here"
           value={text}
           required
           onChange={textChange}
         />
-        <button className="submit" onClick={submit}>
+        <button className="submit bg-purple-950 hover:bg-purple-700 w-20 h-16 border-none rounded-md m-5" onClick={submit}>
           +
         </button>
       </div>
