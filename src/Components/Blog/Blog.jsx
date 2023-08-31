@@ -15,7 +15,7 @@ const Blog = ({ image, title, text, onRemove, onEdit }) => {
   };
 
   return (
-    <div className="Blog p-5 m-5 rounded-md">
+    <div className="Blog p-5 m-5 rounded-md flex flex-wrap">
       {isEditing ? (
         <>
           <input
@@ -42,7 +42,7 @@ const Blog = ({ image, title, text, onRemove, onEdit }) => {
             Save
           </button>
         ) : (
-          <button className="edit hover:bg-orange-700 p-2 m-2" onClick={handleEditClick}>
+          <button className="edit bg-orange-500 hover:bg-orange-700 p-2 m-2" onClick={handleEditClick}>
             Edit
           </button>
         )}

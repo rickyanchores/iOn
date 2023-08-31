@@ -47,11 +47,11 @@ const Form = () => {
   };
 
   return (
-    <form className="Form flex flex-col justify-center" action="active">
+    <form className="Form flex flex-wrap flex-col justify-center" action="active">
       <div className="input-container m-auto rounded-md ">
         <input
           type="text"
-          className="inputTitle bg-zinc-800 w-3/4 p-5 m-5"
+          className="inputTitle bg-zinc-800 font-extrabold text-2xl w-3/4 p-5 m-5"
           placeholder="Title"
           value={title}
           required
