@@ -15,7 +15,7 @@ const Blog = ({ image, title, text, onRemove, onEdit }) => {
   };
 
   return (
-    <div className="Blog p-5 m-5 rounded-md flex flex-wrap">
+    <div className="Blog p-5 m-5 rounded-md max-md:flex-col">
       {isEditing ? (
         <>
           <input

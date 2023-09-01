@@ -58,17 +58,18 @@ const Form = () => {
           onChange={titleChange}
         />
         <textarea
-          className="inputText bg-zinc-800 w-3/4 p-5 m-5"
+          className="inputText bg-zinc-800 w-3/4 p-5"
           placeholder="Write here"
           value={text}
           required
           onChange={textChange}
         />
-        <button className="submit bg-purple-950 hover:bg-purple-700 w-20 h-16 border-none rounded-md m-5" onClick={submit}>
+
+      </div>
+      <button className="submit mt-5 bg-purple-950 hover:bg-purple-700 text-lg w-36 h-16 max-md:w-20 border-none rounded-md m-auto" onClick={submit}>
           +
         </button>
-      </div>
-      <div className="results">
+      <div className="results-container mt-5">
         <div className="results">
           {blogEntries.map((entry, index) => (
             <Blog
