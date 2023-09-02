@@ -51,14 +51,14 @@ const Form = () => {
       <div className="input-container m-auto rounded-md ">
         <input
           type="text"
-          className="inputTitle bg-zinc-800 font-extrabold text-2xl w-3/4 p-5 m-5"
+          className="inputTitle bg-zinc-800 font-extrabold text-2xl w-3/4 p-5 m-5 rounded-md"
           placeholder="Title"
           value={title}
           required
           onChange={titleChange}
         />
         <textarea
-          className="inputText bg-zinc-800 w-3/4 p-5"
+          className="inputText bg-zinc-800 w-3/4 p-5 rounded-md"
           placeholder="Write here"
           value={text}
           required
@@ -66,7 +66,7 @@ const Form = () => {
         />
 
       </div>
-      <button className="submit mt-5 bg-purple-950 hover:bg-purple-700 text-lg w-36 h-16 max-md:w-20 border-none rounded-md m-auto" onClick={submit}>
+      <button className="submit mt-5 bg-emerald-700 hover:bg-emerald-500 text-lg w-36 h-16 max-md:w-20 border-none rounded-md m-auto" onClick={submit}>
           +
         </button>
       <div className="results-container mt-5">

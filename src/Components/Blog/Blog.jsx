@@ -19,7 +19,7 @@ const Blog = ({ image, title, text, onRemove, onEdit }) => {
       {isEditing ? (
         <>
           <input
-            className=" bg-zinc-800 text-white p-5"
+            className=" bg-zinc-800 text-white text-2xl p-5"
             type="text"
             value={editedTitle}
             onChange={(e) => setEditedTitle(e.target.value)}
@@ -55,3 +55,5 @@ const Blog = ({ image, title, text, onRemove, onEdit }) => {
 };
 
 export default Blog;
+
+

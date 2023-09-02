@@ -15,6 +15,10 @@
 body {
   background: black;
   color: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
 }
 
 .Blog{
@@ -23,3 +27,4 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+
