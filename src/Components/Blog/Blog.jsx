@@ -19,13 +19,13 @@ const Blog = ({ image, title, text, onRemove, onEdit }) => {
       {isEditing ? (
         <>
           <input
-            className=" bg-zinc-800 text-white text-2xl p-5"
+            className=" bg-zinc-800 text-white text-2xl p-5 "
             type="text"
             value={editedTitle}
             onChange={(e) => setEditedTitle(e.target.value)}
           />
           <textarea
-            className="bg-zinc-800 text-white p-5"
+            className="bg-zinc-800 text-white p-5 m-5"
             value={editedText}
             onChange={(e) => setEditedText(e.target.value)}
           />
@@ -38,7 +38,7 @@ const Blog = ({ image, title, text, onRemove, onEdit }) => {
       )}
       <div className="actions-container">
         {isEditing ? (
-          <button className="save" onClick={handleSaveClick}>
+          <button className="save bg-green-700 m-2 p-2" onClick={handleSaveClick}>
             Save
           </button>
         ) : (

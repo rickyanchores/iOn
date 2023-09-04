@@ -66,7 +66,7 @@ const Form = () => {
         />
 
       </div>
-      <button className="submit mt-5 bg-emerald-700 hover:bg-emerald-500 text-lg w-36 h-16 max-md:w-20 border-none rounded-md m-auto" onClick={submit}>
+      <button className="submit mt-5 bg-orange-500 hover:bg-orange-700 text-lg w-36 h-16 max-md:w-20 border-none rounded-md m-auto" onClick={submit}>
           +
         </button>
       <div className="results-container mt-5">
